@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+  <h2 style="text-align: center">{{ search  | title }}</h2>
+
+
+<div class="row">
+          {% for post in final_postings %}
+              <div class="col s4">
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="/"><img src="http://www.freecovers.net/preview/2/b3088323162fba293e2f1f7a395613d7/big.jpg" alt=""></a>
+                      </div>
+                      <div class="card-content">
+                          <p>/</p>
+                      </div>
+                      <div class="card-action">
+                          <a href="/">View listing: Price /</a>
+                      </div>
+                  </div>
+              </div>
+          {% endfor %}
+  </div>
+
+
+
+{% endblock content %}
